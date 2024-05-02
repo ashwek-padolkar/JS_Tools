@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Words</title>
+    <link rel="stylesheet" href="c1.css">
+    <script src="j1.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo_Word Fusion.png" alt="Word Fusion">
+        <h2>Word Fusion Pro</h2>
+    </div>
+
+    <div class="container">
+        <div class="keywords">Now you can merge words, fast and easy!</div>
+        <div class="sub_keywords">just type your keywords inside the 3 boxes and press merge.</div>
+        <div class="input">
+            <div class="text1">
+                <textarea id="textarea1" class="textarea" placeholder="Enter some words here...">www</textarea>
+            </div>
+
+            <div class="text2">
+                <textarea id="textarea2" class="textarea" placeholder="Enter some words here...">google
+amazon
+flipkart
+snapdeal
+                </textarea>
+            </div>
+
+            <div class="text3">
+                <textarea id="textarea3" class="textarea" placeholder="Enter some words here...">com
+net
+in
+org
+                </textarea>
+            </div>
+        </div>
+
+        <div class="Extra_opt">
+            <input type="button" value="Extra Options" id="Extra_option" onclick="extraOptions()">
+            <button class="plusOpt" onclick="extraOptions()">+</button>
+            <button class="minusOpt hidden" onclick="extraOptions()">-</button>
+        </div>
+
+        <div class="options hidden">
+            <div class="key">
+                <label for="separator">Separator: </label>
+                <div class="buttonsBtn">
+                    <input type="button" value="Nothing" class="nothing">
+                    <input type="button" value="Space" class="space">
+                    <input type="button" value="Minus" class="minus">
+                    <input type="button" value="Plus" class="plus">
+                    <div class="customDiv">
+                        <input type="button" value="Custom :" class="custom_separator">
+                        <input type="text" id="custom_sep" placeholder="eg. +">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <label for="wrap_in">Wrap in: </label>
+                    <div class="buttonsBtn">
+                        <input type="button" value="Nothing" class="nothing_wrap">
+                        <input type="button" value='" "' class="double_wrap">
+                        <input type="button" value="[ ]" class="sqr_bracket_wrap">
+                        <input type="button" value="{ }" class="curly_bracket_wrap">
+                        <div class="customDiv">
+                            <input type="button" value="Custom :" class="custom_wrapper">
+                            <input type="text" id="custom_wrap" placeholder="eg. {}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mergeBtn">
+            <center><input type="button" id="mergebutton" class="merge" value="Merge" onclick="display()"></center>
+        </div>
+
+        <div class="display">
+            <center>
+                <div class="combinations">Total Combinations possible : <span id="combo"></span></div>
+                <textarea id="displaybox" class="textarea" placeholder="Merge output will be displayed here..." readonly></textarea>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

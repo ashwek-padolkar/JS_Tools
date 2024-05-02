@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Base64</title>
+    <script src="j3_1.js" defer></script>
+    <link rel="stylesheet" href="c3_1.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo_Image.png" alt="Image">
+        <h2>Image to Base64</h2>
+    </div>
+    <div class="container">
+        <div class="fileContainer">
+            <div class="container1">
+                <label for="images" class="dropContainer" id="dropcontainer">
+                    <p>Choose your file for upload</p>
+                    <input type="file" id="fileInput" accept="image/*" required>
+                </label>
+            </div>
+            <div class="container2">
+                <div class="imagePreview">
+                    <img src="" alt="Image Preview" class="image">
+                </div>
+            </div>
+        </div>
+        <div class="codeContainer">
+            <div class="baseString">
+                <div class="textinfo">
+                    <h5 class="base64-text">Base64 String</h5>
+                    <img src="/h3/h3_1/copy-regular.svg" id="baseCopy" alt="" >
+                </div>
+                <textarea class="textarea base64" placeholder="Your Base64 string will appear here..."></textarea>
+            </div>
+            <div class="htmlString">
+                <div class="textinfo">
+                    <h5 class="html-text">HTML code</h5>
+                    <img src="/h3/h3_1/copy-regular.svg" id="htmlCopy" alt="" >
+                </div>
+                <textarea class="textarea html" placeholder="Your html code will appear here..."></textarea>
+            </div>
+            <div class="cssString">
+                <div class="textinfo">
+                    <h5 class="css-text">CSS Source</h5>
+                    <img src="/h3/h3_1/copy-regular.svg" id="cssCopy" alt="">
+                </div>
+                <textarea class="textarea css" placeholder="Your css background code will appear here..."></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

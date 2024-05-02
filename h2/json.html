@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Beautifier</title>
+    <script src="j2.js" defer></script>
+    <link rel="stylesheet" href="c2.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo_JSON.png" alt="Word Fusion">
+        <h2>JSON Editor</h2>
+    </div>
+    <div class="container">
+        <textarea class="textarea" placeholder="Enter your JSON here...">
+          {"employees":[  
+            {"name":"Shyam", "email":"shyamjaiswal@gmail.com"},  
+            {"name":"Bob", "email":"bob32@gmail.com"},  
+            {"name":"Jai", "email":"jai87@gmail.com"}  
+          ]}
+        </textarea>
+        <div class="optionsContainer">
+            <button class="optionBtn tree">Tree Viewer</button>
+            <button class="optionBtn minify">Minify</button>
+            <button class="optionBtn beautify">Beautify</button>
+            <select class="optionBtn space">
+                <option value="1">1 tab space</option>
+                <option value="2">2 tab space</option>
+                <option value="3">3 tab space</option>
+                <option value="4">4 tab space</option>
+                <option value="6">6 tab space</option>
+                <option value="8">8 tab space</option>
+                <option value="10">10 tab space</option>
+            </select>
+            <button class="optionBtn validate">Validate</button>
+            <button class="optionBtn toXML">To XML</button>
+            <button class="optionBtn URL">From URL</button>
+        </div>
+        <textarea readonly class="textarea output" placeholder="Your JSON will appear here..."></textarea>
+        <div id="tree-viewer"></div>
+    </div>
+</body>
+</html>

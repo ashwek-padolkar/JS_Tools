@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    min-height: 96.8vh;
+}
+
+.header{
+    background: linear-gradient(0deg, rgb(86, 86, 198), #012c97);
+    height: 100px;
+    margin: 10px 20px 0px 20px;
+    box-shadow: 0px 0px 10px 1px rgb(141, 141, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+.body{
+    width: 100%;
+    min-height: 78vh;
+    display: grid;
+    align-items: center;
+}
+
+.mainContainer{
+    max-width: 100%;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 0px 60px;
+    column-gap: 50px;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.container{
+    height: 100%;
+    background: rgba(211, 211, 211, 0.2);
+    border-radius: 5px;
+    /* border: 1px solid rgb(205, 202, 202); */
+    box-shadow: inset 0px 0px 10px 4px rgba(25, 25, 25, 0.2);
+}
+
+.container:hover{
+    background: rgba(2, 2, 191, 0.749);
+    box-shadow: inset 0px 0px 10px 4px rgb(12, 1, 162);
+    color: rgb(255, 255, 255);
+}
+
+.container1,.container2,.container3,.container4{
+    margin: 20px;
+}
+
+.caption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.description{
+    min-height: 250px;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #161616;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+a:hover{
+    background-color: #000000;
+}
+
+
+@media(max-width: 1100px){
+    .header{
+        height: 80px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .caption{
+        font-size: 15px;
+    }
+    
+    .description{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 1000px){
+    .mainContainer{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px 60px;
+        row-gap: 40px;
+    }
+
+    img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .caption{
+        font-size: 18px;
+    }
+    
+    .description{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 600px){    
+    img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .caption{
+        font-size: 15px;
+    }
+    
+    .description{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 550px){    
+    .mainContainer{
+        grid-template-columns: 1fr;
+        margin: 40px 60px;
+        row-gap: 40px;
+    }
+
+    img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .caption{
+        font-size: 18px;
+    }
+    
+    .description{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 330px){
+    .header{
+        height: 60px;
+    }
+    
+    h2{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .mainContainer{
+        margin: 30px 20px;
+    }
+
+    .description{
+        margin-bottom: 10px;
+    }
+
+    a{
+        padding: 5px;
+    }
+}

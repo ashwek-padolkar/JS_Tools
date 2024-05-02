@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    min-height: 96.8vh;
+}
+
+.header{
+    background: linear-gradient(0deg, rgb(86, 86, 198), #012c97);
+    height: 100px;
+    margin: 10px 20px 0px 20px;
+    box-shadow: 0px 0px 10px 1px rgb(141, 141, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
+.body{
+    width: 100%;
+    min-height: 78vh;
+    display: grid;
+    align-items: center;
+}
+
+.mainContainer{
+    max-width: 100%;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 0px 60px;
+    column-gap: 50px;
+}
+
+.container{
+    width: 300px;
+    min-width: 250px;
+    height: 450px;
+    /* background-image: url("3d\ purple\ render\ of\ some\ elcetronics.jpg"); */
+    background: linear-gradient(0deg, #094df8, rgb(0, 0, 124));
+    background-size: cover;
+    box-shadow: 0px 0px 10px 6px rgba(19, 0, 143, 0.375);
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.image {
+    background: rgb(224, 224, 224);
+    background-image: url("");
+    background-size:cover;
+    height: 65%;
+    margin: 20px 25px 0px 25px;
+    border-radius: 6px;
+}
+
+.image1{
+    height: 37%;
+    text-align: center;
+}
+
+.arrow{
+    height: 19%;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+.image2{
+    height: 37%;
+    text-align: center;
+}
+
+.image1 img, .image2 img{
+    height: 80%;
+    width: 80px;
+    /* mix-blend-mode: multiply; */
+    margin: 15px 0px 15px 0px;
+    border-radius: 6px;
+}
+
+.arrow img{
+    height: 100%;
+}
+
+.caption{
+    font-size: 20px;
+    margin: 20px 25px 0px 25px;
+    padding: 10px 0px;
+    border-radius: 6px;
+    color: #000000;
+    background-color: rgb(212, 212, 212);
+}
+
+.getStartedBtn{
+    height: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #161616;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+a:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+@media(max-width: 1100px){
+    .header{
+        height: 80px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    .caption{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1000px){
+    h2{
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+
+    .container{
+        width: 80%;
+    }
+}
+
+@media(max-width: 750px){
+    h2{
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .mainContainer{
+        grid-template-columns: 1fr;
+        margin: 40px 60px;
+        row-gap: 40px;
+    }
+
+    .container{
+        width: 50%;
+    }
+}
+
+@media(max-width: 400px){
+    h2{
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    
+    h2{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .mainContainer{
+        margin: 30px 20px;
+    }
+
+    a{
+        padding: 5px;
+    }
+}
+
+@media(max-width: 300px){
+    .header{
+        height: 60px;
+    }
+
+    h2{
+        font-size: 17px;
+        letter-spacing: 3px;
+    }
+
+    .container{
+        min-width: 200px;
+        height: 350px;
+    }
+
+    .image{
+        margin: 20px 20px 10px 20px;
+    }
+
+    .image1 img, .image2 img{
+        height: 80%;
+        width: 65px;
+        margin: 15px 0px 15px 0px;
+        border-radius: 6px;
+    }
+
+    .caption{
+        font-size: 15px;
+        padding: 5px 0px;
+    }
+}
